@@ -32,7 +32,7 @@ export default function SectionSlider() {
       },
       text: {
         EN: "I’m Issac — weaving code and dreams,\nWhere logic bends and ideas gleam.\nWeb developer, ethical hacker,\nExploring worlds beyond the seams.",
-        AR: "أنا إسحاق — أنسج الأكواد والأحلام،\nحيث ينحني المنطق وتتلألأ الإلهام.\nمطور ويب ومخترق أخلاقي،\nأستكشف عوالم تتجاوز الأوهام.",
+        AR: "أنا إسحاق — أنسج الأكواد والأحلام،\nحيث ينحني المنطق ويتلألأ الإلهام.\nمطور ويب ومخترق أخلاقي،\nأستكشف عوالم تتجاوز الأوهام.",
       },
     },
     {
@@ -115,14 +115,14 @@ export default function SectionSlider() {
         {/* Arrows */}
         <button
           onClick={prevSection}
-          className="absolute left-10 bg-white dark:bg-gray-800 text-white dark:text-white p-4 rounded-full shadow-lg hover:scale-125 transition z-40 cursor-pointer"
+          className="absolute left-10 bg-gray-800 text-white dark:text-white p-4 rounded-full shadow-lg hover:scale-125 transition z-40 cursor-pointer"
         >
           <ChevronLeft size={36} />
         </button>
 
         <button
           onClick={nextSection}
-          className="absolute right-10 bg-white dark:bg-gray-800 text-white dark:text-white p-4 rounded-full shadow-lg hover:scale-125 transition z-40 cursor-pointer"
+          className="absolute right-10 bg-gray-800 text-white dark:text-white p-4 rounded-full shadow-lg hover:scale-125 transition z-40 cursor-pointer"
         >
           <ChevronRight size={36} />
         </button>

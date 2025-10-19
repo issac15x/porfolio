@@ -61,17 +61,14 @@ export default function ContactSection({ show, onClose }) {
           animate={{ y: 0, opacity: 1 }}
           exit={{ y: "100%", opacity: 0 }}
           transition={{ duration: 0.7, ease: "easeInOut" }}
-          className="fixed inset-0 z-50 flex items-center justify-center bg-gradient-to-b from-blue-50 via-blue-100 to-gray-200 dark:from-gray-900 dark:via-gray-800 dark:to-gray-700 px-6 overflow-y-auto backdrop-blur-md"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-gradient-to-b from-gray-900 via-gray-800 to-gray-700 px-6 overflow-y-auto backdrop-blur-md"
         >
           {/* Close button */}
           <button
             onClick={onClose}
-            className="mt-10 absolute top-0 left-1/2 -translate-x-1/2 bg-white/10 dark:bg-gray-700/30 p-3 rounded-full shadow-lg backdrop-blur-sm hover:scale-110 transition-transform duration-300 cursor-pointer"
+            className="mt-10 absolute top-0 left-1/2 -translate-x-1/2 bg-gray-700/30 p-3 rounded-full shadow-lg backdrop-blur-sm hover:scale-110 transition-transform duration-300 cursor-pointer"
           >
-            <ChevronsDown
-              size={32}
-              className="text-blue-400 dark:text-blue-300"
-            />
+            <ChevronsDown size={32} className="text-blue-300" />
           </button>
 
           <div
@@ -80,28 +77,23 @@ export default function ContactSection({ show, onClose }) {
             }`}
           >
             {/* Section Title */}
-            <h2 className="text-4xl font-bold mb-6 text-blue-600 dark:text-blue-400 tracking-wide">
+            <h2 className="text-4xl font-bold mb-6 text-blue-400 tracking-wide">
               {current.title}
             </h2>
 
             {/* Subtitle */}
-            <p className="text-lg text-gray-600 dark:text-gray-300 mb-10">
-              {current.subtitle}
-            </p>
+            <p className="text-lg text-gray-300 mb-10">{current.subtitle}</p>
 
             {/* Contact Info */}
             <div className="flex flex-col items-center gap-6 mb-8">
-              <Mail
-                className="text-blue-500 dark:text-blue-400 mb-2"
-                size={28}
-              />
+              <Mail className="text-blue-400 mb-2" size={28} />
 
               <button
                 onClick={handleCopy}
-                className="text-gray-700 dark:text-gray-200 text-lg hover:text-blue-500 dark:hover:text-blue-400 transition-colors duration-200"
+                className="text-gray-200 text-lg hover:text-blue-400 transition-colors duration-200"
               >
                 {copied ? (
-                  <span className="flex items-center gap-2 text-green-500 dark:text-green-400">
+                  <span className="flex items-center gap-2 text-green-400">
                     <Check size={18} /> {current.copied}
                   </span>
                 ) : (
