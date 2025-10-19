@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+* {
+  cursor: none !important;
+}
+
+.snowflake {
+  position: fixed;
+  top: -10px;
+  color: white;
+  font-size: 1em;
+  opacity: 0.8;
+  animation: fall linear infinite;
+  z-index: 50;
+  pointer-events: none;
+  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.8));
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.clip-mountain {
+  clip-path: polygon(
+    0% 100%,
+    20% 60%,
+    35% 70%,
+    50% 50%,
+    65% 70%,
+    80% 60%,
+    100% 100%
+  );
+}
