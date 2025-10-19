@@ -38,7 +38,7 @@ export default function AboutSection({ show, onClose }) {
             {/* Profile Image */}
             <div className="relative mx-auto w-36 h-36 md:w-44 md:h-44 mb-6">
               <img
-                src="src/assets/images/pic1.jpg"
+                src="https://i.imgur.com/sdmvPAQ.jpeg"
                 alt="Issac"
                 className="w-full h-full rounded-full object-cover border-2 border-blue-200 dark:border-blue-600 shadow-md shadow-blue-100/20 dark:shadow-blue-900/30"
               />
